@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headparent {
+    background-color: #ff42a1;
+    display: flex;
+    flex-direction: row;
+}
+
+.headchild {
+    background-color: #ff94c9;
+    text-align: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.questionparent {
+    background-color: #ffbdde;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 90vh;
+}
+
+.questionchild {
+    background-color: #fba0e3;
+    padding: 10px;
+    width: 60%;
+    height: 52vh;
+    margin-top: 20vh;
+    border-radius: 25px;
+}
+
+.nm1,
+.nm2,
+.ques {
+    background-color: #ff66cc;
+    height: 10vh;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+#in1 {
+    border: 1px solid #848484;
+    border-radius: 15px;
+    outline: 0;
+    height: 45px;
+    width: 280px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin-left: 12px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+#btn1 {
+    border-radius: 15px;
+    height: 42px;
+    width: 180px;
+    background-color: #ff66cc;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+    padding: 8px;
+    font-weight: 700;
+}
+
+
+#btn1:hover {
+    background-color: #85e913;
+}
+
+
+div.questionchild p {
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+    padding: 3vh 0vw 0vh 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+div.questionparent h1 {
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+    padding: 23vh 0vw 0vh 15vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+#result {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    display: inline-block;
+}
+
+#in2 {
+    border: 1px solid #848484;
+    border-radius: 15px;
+    outline: 0;
+    height: 45px;
+    width: 280px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin-left: 12px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 5%;
+    height: 80%;
+    border-radius: 25px;
+    position: relative;
+}
+
+#myheading {
+    position: absolute;
+    top: 90px;
+    left: 480px;
+    z-index: 10;
+}
+
+.headchild:hover {
+    background-color: #85e913;
+}
+
+#nm2{
+display: none;
+}
