@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonyms</title>
+    <link rel="stylesheet" type="text/css" href="antonyms.css">
+    <link rel="stylesheet" type="text/css" href="year.css">
+    <script src="antonyms.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <button id="btnhome"><a href="index.html">Home</a></button>
+        <button id="btnhome" class = "active"><a href="year.html">Months of the Year</a></button>
+        <button id="btnhome"><a href="week.html">Week Day</a></button>
+        <button id="btnhome"><a href="rainbow.html">Rainbow Colors</a></button>
+        <button id="btnhome"><a href="shapes.html">Shapes</a></button>
+        <button id="btnhome"><a href="ObjectName.html">Object Name</a></button>
+        <button id="btnhome"><a href="antonyms.html">Antonyms</a></button> 
+    </div>
+    <div class="questionparent">
+
+        <div class="questionchild">
+            <div class="ques">
+                <p>Antonyms</p>
+            </div>
+            <div class="nm1">
+                <p id="nm1"></p>
+            </div>
+            <div class="nm2">
+                <p id="nm2"></p>
+            </div>
+
+            <input type="text" name="" id="in1" placeholder="Answer">
+            <p id="result"></p>
+            <div class ="plus"  id="btn1" onclick="checkans()">NEXT</div>
+            <!--<div class ="minus"  id="btn1" onclick="">Previous</div>-->
+        </div>
+         </div>
+         <div class="wrapper">
+            <span class="plus">+</span>
+          </div>
+          <script>
+       num = 0;
+       
+           const plus = document.querySelector(".plus")
+            let a = -1;
+            plus.addEventListener("click", ()=>{
+              a++;
+              a = (a < 10) ? 0 + a : a;
+              num.innerText = a;
+              
+      console.log(a);
+      
+      ary1 = ['Begin',
+'Present',
+'Above',
+'Death',
+'Lend',
+'Top',
+'Go',
+'Alive',
+'Clean',
+'Advantage',
+'Wet',
+'Difficult',
+'Odd',
+'Slow',
+'Bad',
+'Legal',
+'Maximum',
+'Far',
+'Always',
+'Day',
+'Absent',
+'Buy',
+'Big',
+'Weak',
+'Clever',
+'Fat',
+'Thick',
+'Beautiful',
+'Safe',
+'Laugh'];
+
+ary2 = ['End',
+'Absent',
+'Below',
+'Birth',
+'Borrow',
+'Bottom',
+'Come',
+'Dead',
+'Dirty',
+'Disadvantage',
+'Dry',
+'Easy',
+'Even',
+'Fast',
+'Good',
+'Illegal',
+'Minimum',
+'Near',
+'Never',
+'Night',
+'Present',
+'sell',
+'Small',
+'Strong',
+'Stupid',
+'Thin',
+'Thin',
+'ugly',
+'Unsafe',
+'Weep'];      
+document.getElementById("nm1").innerHTML =  ary1[a];
+        document.getElementById("nm2").innerHTML =  ary2[a];
+        n = document.getElementById("nm2").innerHTML =  ary2[a];
+
+
+
+      });
+      minus = document.querySelector(".minus")
+    minus.addEventListener("click", ()=>{
+    if(a > 0){
+        a--;
+        a = (a < 10) ? 0 + a : a;
+        num.innerText = a;
+        console.log(a);
+        
+      document.getElementById("nm1").innerHTML =  ary1[a];
+      document.getElementById("nm2").innerHTML =  ary2[a];
+      }
+    });   
+      
+ 
+          </script>
+              
+</body>
+
+</html>
