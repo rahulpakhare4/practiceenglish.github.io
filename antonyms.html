@@ -116,10 +116,47 @@ ary2 = ['End',
 'Thin',
 'Ugly',
 'Unsafe',
-'Weep'];      
-document.getElementById("nm1").innerHTML =  ary1[a];
-        document.getElementById("nm2").innerHTML =  ary2[a];
-        n = document.getElementById("nm2").innerHTML =  ary2[a];
+'Weep']; 
+                
+ar3 [1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21,
+22,
+23,
+24,
+25,
+26,
+27,
+28,
+29,
+30]
+        
+      if (ary3 <= 30){
+      document.getElementById("nm1").innerHTML =  ary1[a];
+      document.getElementById("nm2").innerHTML =  ary2[a];
+      document.getElementById("displyNum").innerHTML =  ary3[a];
+      }
+        else{
+            document.getElementById("displyNum").innerHTML = "Thank You! Test End;
+        }
 
 
 
@@ -131,9 +168,14 @@ document.getElementById("nm1").innerHTML =  ary1[a];
         a = (a < 10) ? 0 + a : a;
         num.innerText = a;
         console.log(a);
-        
+      if (ary3 <= 30){
       document.getElementById("nm1").innerHTML =  ary1[a];
       document.getElementById("nm2").innerHTML =  ary2[a];
+      document.getElementById("displyNum").innerHTML =  ary3[a];
+      }
+        else{
+            document.getElementById("displyNum").innerHTML = "Thank You! Test End;
+        }
       }
     });   
       
