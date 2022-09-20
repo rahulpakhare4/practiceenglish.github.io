@@ -3,11 +3,13 @@ function starttest() {
     let inputAns = document.getElementById("tb1").value;
     if (inputAns == "") {
         nextimage()
+        getfocus()
         
 
         
     } else {
         checkans()
+        getfocus()
     }
 
 }
@@ -57,3 +59,7 @@ function checkans(){
         }
 
     }
+
+function getfocus() {
+  document.getElementById("tb1").focus();
+}
