@@ -9,12 +9,19 @@ function checkans(){
       document.getElementById("result").innerHTML = "Correct";
       document.getElementById("in1").style.backgroundColor = "green";
       document.getElementById("in1").value ='';
+        getfocus()
     }
 
     else{
         document.getElementById("result").innerHTML = "Wrong";
         document.getElementById("in1").style.backgroundColor = "red";
         a = a-1;
+        getfocus()
 }
 
+}
+
+
+function getfocus() {
+  document.getElementById("in1").focus();
 }
