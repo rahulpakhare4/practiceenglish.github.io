@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen and Write</title>
+    <link rel="stylesheet" type="text/css" href="year.css">
+    <link rel="stylesheet" type="text/css" href="listenandwrite.css">
+    <script src="listenandwrite.js"></script>
+    <style>
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <button id="btnhome"><a href="index.html">Home</a></button>
+        <button id="btnhome" class="active"><a href="year.html">Months of the Year</a></button>
+        <button id="btnhome"><a href="week.html">Week Day</a></button>
+        <button id="btnhome"><a href="rainbow.html">Rainbow Colors</a></button>
+        <button id="btnhome"><a href="shapes.html">Shapes</a></button>
+        <button id="btnhome"><a href="ObjectName.html">Object Name</a></button>
+        <button id="btnhome"><a href="antonyms.html">Antonyms</a></button>
+        <button id="btnhome"><a href="listenandwrite.html">Listen and Write</a></button>
+      <button id="btnhome"><a href="listenandwrite2.html">Listen and Write2</a></button>
+    </div>
+
+    <div class="myimagebody">
+        <div class="forimg"><img
+                src="https://raw.githubusercontent.com/rahulpakhare4/practiceenglish.github.io/main/welcome.JPG"
+                id="myimg" width="400px" height="400px">
+
+            <div class="mytext">
+                <textarea id="in1" type="text" name="" placeholder="" cols="52" rows="2"></textarea>
+            </div>
+
+
+
+            <div class="plus" id="mybtnn" onclick="checkans()">NEXT</div>
+
+
+            <div class="nm1">
+                <p id="nm1"></p>
+            </div>
+            <div class="nm2">
+                <p id="nm2"></p>
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+
+            <span class="num" id="displyNum">0</span>
+            <span class="minus" onclick="checkans()">-</span>
+            <span class="plus" id="result"> </span>
+        </div>
+
+
+
+
+        <audio id="myAudio">
+            <source src="" type="audio/mpeg">
+        </audio>
+
+        <script>
+            num = 0;
+
+            const plus = document.querySelector(".plus")
+            a = -1;
+            plus.addEventListener("click", () => {
+                a++;
+                a = (a < 10) ? 0 + a : a;
+                num.innerText = a;
+
+                console.log(a);
+
+                ary1 = ['https://github.com/rahulpakhare4/Vocabulary/blob/main/Advantage.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Aeroplanes.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Animals.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Authority .mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Available .mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Broken.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Cartographers .mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Comfortable.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Computer.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Demand.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Directions .mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Generated.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Government .mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Humans.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Important.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Instrument .mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Legend.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Migration .mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Newspaper.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Photograph.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Pictures.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Possible.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Remember.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Required.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Reservation.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Usually.mp3',
+'https://github.com/rahulpakhare4/Vocabulary/blob/main/Villages.mp3'];
+
+                ary2 = ['Advantage',
+'Aeroplanes',
+'Animals',
+'Authority ',
+'Available ',
+'Broken',
+'Cartographers ',
+'Comfortable',
+'Computer',
+'Demand',
+'Directions ',
+'Generated',
+'Government ',
+'Humans',
+'Important',
+'Instrument ',
+'Legend',
+'Migration ',
+'Newspaper',
+'Photograph',
+'Pictures',
+'Possible',
+'Remember',
+'Required',
+'Reservation',
+'Usually',
+'Villages'];
+
+                ary3 = [1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30]
+
+                var x = document.getElementById("myAudio");
+
+                if (ary3[a] <= 10) {
+                    document.getElementById("nm1").innerHTML = ary1[a];
+                    document.getElementById("nm2").innerHTML = ary2[a];
+                    document.getElementById("displyNum").innerHTML = ary3[a];
+                    x.src = ary1[a];
+                    x.play();
+                }
+                else {
+                    document.getElementById("displyNum").innerHTML = "Thank You!";
+                }
+
+
+
+            });
+
+
+
+            minus = document.querySelector(".minus")
+            minus.addEventListener("click", () => {
+                if (a > 0) {
+                    a--;
+                    a = (a < 10) ? 0 + a : a;
+                    num.innerText = a;
+                    console.log(a);
+                    if (ary3[a] <= 10) {
+                        document.getElementById("nm1").innerHTML = ary1[a];
+                        document.getElementById("nm2").innerHTML = ary2[a];
+                        document.getElementById("displyNum").innerHTML = "Antonyms:-" + ary3[a];
+                        x.src = ary1[a];
+                        x.play();
+                    }
+                    else {
+                        document.getElementById("displyNum").innerHTML = "Thank You! Test End";
+                    }
+                }
+            });
+
+        </script>
+</body>
+
+</html>
