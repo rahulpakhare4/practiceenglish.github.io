@@ -75,7 +75,7 @@
             a = -1;
             plus.addEventListener("click", () => {
                 a++;
-                a = (a < 10) ? 0 + a : a;
+                a = (a < 27) ? 0 + a : a;
                 num.innerText = a;
 
                 console.log(a);
@@ -111,21 +111,21 @@
                 ary2 = ['Advantage',
 'Aeroplanes',
 'Animals',
-'Authority ',
-'Available ',
+'Authority',
+'Available',
 'Broken',
-'Cartographers ',
+'Cartographers',
 'Comfortable',
 'Computer',
 'Demand',
-'Directions ',
+'Directions',
 'Generated',
-'Government ',
+'Government',
 'Humans',
 'Important',
-'Instrument ',
+'Instrument',
 'Legend',
-'Migration ',
+'Migration',
 'Newspaper',
 'Photograph',
 'Pictures',
@@ -190,7 +190,7 @@
             minus.addEventListener("click", () => {
                 if (a > 0) {
                     a--;
-                    a = (a < 10) ? 0 + a : a;
+                    a = (a < 27) ? 0 + a : a;
                     num.innerText = a;
                     console.log(a);
                     if (ary3[a] <= 10) {
